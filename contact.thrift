@@ -12,6 +12,6 @@ service ContactSvc {
     Contact read(1:string contactId),
     Contact update(1:Contact contact),
     void destroy(1:string contactId),
-    list fetch(),
-    void reset()
+    void reset(),
+    list<string> fetch()
 }
